@@ -35,7 +35,6 @@
     font-family: 'pn';
     src: url('../font/pn-bold.eot');
     src: url('../font/pn-bold.eot?#iefix') format('embedded-opentype'),
-         url('../font/pn-bold.woff2') format('woff2'),
          url('../font/pn-bold.woff') format('woff'),
          url('../font/pn-bold.ttf') format('truetype'),
          url('../font/pn-bold.svg#proxima_nova_altSBdIt') format('svg');
@@ -200,7 +199,35 @@ body{
     left: 0;
     display: none;
 }
-
+.content{
+    padding-top: 50px;
+}
+.content .container .half{
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
+    padding: 0 13px;
+}
+.content .container .half.right{
+    border-left: 2px solid #f781b3;
+}
+.content .container .half p{
+    font-family: 'pn';
+    font-size: 21px;
+    color: #3f3f3f;
+    font-weight: 400;
+    margin: 0;
+    text-align: justify;
+    letter-spacing: -0.6px;
+    line-height: 24px;
+}
+.content .container .half h3{
+    font-family: 'pn';
+    font-size: 30px;
+    color: #1fa8de;
+    text-align: right;
+    margin: 5px 0 0;
+}
 
 
 
