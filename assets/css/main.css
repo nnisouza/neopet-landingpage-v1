@@ -144,7 +144,7 @@ body{
     font-size: 1px;
     color: transparent;
 }
-.header h2{
+h2{
     font-family: 'pn';
     text-align: center;
     font-size: 51.8px;
@@ -202,6 +202,10 @@ body{
 .content{
     padding-top: 50px;
 }
+.content .container>div{
+    padding-bottom: 20px;
+    border-bottom: 1px solid #f4bbd3;
+}
 .content .container .half{
     width: 50%;
     float: left;
@@ -227,6 +231,67 @@ body{
     color: #1fa8de;
     text-align: right;
     margin: 5px 0 0;
+}
+.formArea{
+}
+.formArea h2{
+    padding-top: 30px;
+}
+.formArea form{
+    width: 800px;
+    margin: 0 auto;
+}
+.formArea .form-group{
+    float: left;
+    margin: 15px 20px;
+}
+.formArea .form-group .iconH{
+    background: #fff;
+    border: 1px solid #b7b7b7;
+    border-right: 0 none;
+    border-radius: 3px 0 0 3px!important;
+    height: 48px;
+    line-height: 48px;
+    width: 40px;
+    text-align: center;
+    float: left;
+}
+.formArea .form-group .iconH i.fa-map-marker{
+    font-size: 19px;
+}
+.formArea .form-group .iconH i.fa-mobile{
+    font-size: 23px;
+    line-height: 47px;
+}
+.formArea .form-group input{
+    background: #fff;
+    border: 1px solid #b7b7b7;
+    border-left: 0 none;
+    border-radius: 0 3px 3px 0!important;
+    height: 46px;
+    width: 317px;
+    -webkit-outline: 0 none;
+    -moz-outline: 0 none;
+    -ms-outline: 0 none;
+    -o-outline: 0 none;
+    outline: 0 none;
+}
+.formArea .form-button{
+    width: 100%;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+.formArea .form-button button{
+    font-size: 'pn';
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    width: 100%;
+    height: 44px;
+    color: #fff;
+    background: #ef0022;
+    border: 1px solid #b7b7b7;
+    border-radius: 3px!important;
 }
 
 
