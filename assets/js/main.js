@@ -21,6 +21,14 @@ function actions() {
             $('#videoHolder').fadeIn('slow');
         });
     });
+    
+    $('.controls li').click(function() {
+        var eq = $(this).index();
+        $('.slideItems li').removeClass('active');
+        $('.controls li').removeClass('current');
+        $(this).addClass('current');
+        $('.slideItems li').eq(eq).addClass('active');
+    });
 }
 function afterLoaded() {
 }

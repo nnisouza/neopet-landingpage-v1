@@ -13,7 +13,6 @@
     font-family: 'pn';
     src: url('../font/pn-semibold.eot');
     src: url('../font/pn-semibold.eot?#iefix') format('embedded-opentype'),
-         url('../font/pn-semibold.woff2') format('woff2'),
          url('../font/pn-semibold.woff') format('woff'),
          url('../font/pn-semibold.ttf') format('truetype'),
          url('../font/pn-semibold.svg#proxima_nova_altSBdIt') format('svg');
@@ -24,7 +23,6 @@
     font-family: 'pn';
     src: url('../font/pn-regular.eot');
     src: url('../font/pn-regular.eot?#iefix') format('embedded-opentype'),
-         url('../font/pn-regular.woff2') format('woff2'),
          url('../font/pn-regular.woff') format('woff'),
          url('../font/pn-regular.ttf') format('truetype'),
          url('../font/pn-regular.svg#proxima_nova_altSBdIt') format('svg');
@@ -215,6 +213,68 @@ h2{
 .content .container .half.right{
     border-left: 2px solid #f781b3;
 }
+.content .container .half.right .slider{
+    position: relative;
+}
+.content .container .half.right .slider img#sizer{
+    width: 100%;
+    height: auto;
+}
+.content .container .half.right .slider .slideItems{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.content .container .half.right .slider .slideItems li{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+.content .container .half.right .slider .slideItems li.active{
+    
+    opacity: 1;
+}
+.content .container .half.right .slider .slideItems li img{
+    width: 100%;
+    height: auto;
+}
+.content .container .half.right .slider .controls{
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    padding: 0;
+}
+.content .container .half.right .slider .controls li{
+    font-family: 'pn'; 
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #05afef;
+    border-radius: 50%;
+    line-height: 24px;
+    text-align: center;
+    color: #05afef;
+    list-style: none;
+    display: inline-block;
+    margin: 0 7px;
+    font-weight: 600;
+    box-sizing: border-box;
+}
+.content .container .half.right .slider .controls li.current{
+    color: #fff;
+    background: #05afef;
+}
 .content .container .half p{
     font-family: 'pn';
     font-size: 21px;
@@ -232,13 +292,11 @@ h2{
     text-align: right;
     margin: 5px 0 0;
 }
-.formArea{
-}
 .formArea h2{
     padding-top: 30px;
 }
 .formArea form{
-    width: 800px;
+    width: 760px;
     margin: 0 auto;
 }
 .formArea .form-group{
@@ -255,6 +313,7 @@ h2{
     width: 40px;
     text-align: center;
     float: left;
+    box-sizing: border-box;
 }
 .formArea .form-group .iconH i.fa-map-marker{
     font-size: 19px;
@@ -268,8 +327,8 @@ h2{
     border: 1px solid #b7b7b7;
     border-left: 0 none;
     border-radius: 0 3px 3px 0!important;
-    height: 46px;
-    width: 317px;
+    height: 44px;
+    width: 298px;
     -webkit-outline: 0 none;
     -moz-outline: 0 none;
     -ms-outline: 0 none;
@@ -282,7 +341,7 @@ h2{
     box-sizing: border-box;
 }
 .formArea .form-button button{
-    font-size: 'pn';
+    font-family: 'pn';
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
@@ -293,13 +352,65 @@ h2{
     border: 1px solid #b7b7b7;
     border-radius: 3px!important;
 }
+.footer .address{
+    font-size: 22px;
+    text-align: center;
+}
+.footer .facebookPlugin{
+    width: 100%;
+    max-width: 760px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 
 
 
 
-
-
-
+@media screen and (max-width: 760px) {
+    .formArea form{
+        width: 100%;
+    }
+    .formArea .form-group{
+        width: 100%;
+        padding: 15px 20px;
+        box-sizing: border-box;
+        margin: 0;
+        float: none;
+        position: relative;
+    }
+    .formArea .form-group .iconH{
+        position: absolute;
+        top: 15px;
+    }
+    .formArea .form-group input{
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 40px;
+        height: 48px;
+    }
+    
+    .content .container .half{
+        width: 100%;
+        float: none;
+    }
+    .content .container .half.right{
+        border-left: 0 none;
+        padding: 0;
+    }
+    .content .container .half h3{
+        text-align: center;
+    }
+    h2{
+        font-size: 34px;
+        line-height: 35px;
+    }
+    .content .container .half.right .slider .controls{
+        position: static;
+        margin: 20px auto;
+        width: 128px;
+    }
+}
 
 
 

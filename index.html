@@ -18,6 +18,16 @@
         <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
     </head>
     <body>
+       
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=280559398795233&version=v2.0";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+       
         <div class="header">
             <div class="container">
                 <h1 id="logo">Neopet</h1>
@@ -43,7 +53,27 @@ Se você tem perfil de vendas, é comprometido e almeja representar a Neopet, a 
                         </p>
                         <h3>Inscreva-se já!</h3>
                     </div>
-                    <div class="half right">slider</div>
+                    <div class="half right">
+                        <div class="slider">
+                            <img src="assets/img/slider/sizer.png" id="sizer"/>
+                            <ul class="slideItems">
+                                <li class="active">
+                                    <img src="assets/img/slider/pequeno.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/img/slider/medio.png" alt="">
+                                </li>
+                                <li>
+                                    <img src="assets/img/slider/grande.png" alt="">
+                                </li>
+                            </ul>
+                            <ul class="controls">
+                                <li data-size="p" class="current">P</li>
+                                <li>M</li>
+                                <li>G</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -54,25 +84,25 @@ Se você tem perfil de vendas, é comprometido e almeja representar a Neopet, a 
                     <span class="iconH">
                         <i class="fa fa-user fa-fw"></i>
                     </span>
-                    <input type="text" placeholder="Nome">
+                    <input type="text" placeholder="Nome" name="name">
                 </div>
                 <div class="form-group">
                     <span class="iconH">
                         <i class="fa fa-envelope fa-fw"></i>
                     </span>
-                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Email" name="email">
                 </div>
                 <div class="form-group">
                     <span class="iconH">
                         <i class="fa fa-map-marker fa-fw"></i>
                     </span>
-                    <input type="text" placeholder="Cidade">
+                    <input type="text" placeholder="Cidade" name="city">
                 </div>
                 <div class="form-group">
                     <span class="iconH">
                         <i class="fa fa-mobile fa-fw"></i>
                     </span>
-                    <input type="text" placeholder="Telefone">
+                    <input type="text" placeholder="Telefone" name="phone">
                 </div>
                 <div class="form-button">
                     <button type="submit">
@@ -82,7 +112,23 @@ Se você tem perfil de vendas, é comprometido e almeja representar a Neopet, a 
                 </div>
             </form>
         </div>
-        
+        <div class="footer">
+            <p class="address">
+                Rua Araribóia, 125 – 3º andar – Bairro Rio Branco – CEP 93310-350 – Novo Hamburgo, RS
+            </p>
+            <div class="facebookPlugin">
+                <div class="fb-like-box"
+                     data-href="https://www.facebook.com/FacebookDevelopers" 
+                     data-width="760" 
+                     data-height="200" 
+                     data-colorscheme="light" 
+                     data-show-faces="true" 
+                     data-header="false" 
+                     data-stream="false" 
+                     data-show-border="false">
+                </div>
+            </div>
+        </div>
     </body>
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
