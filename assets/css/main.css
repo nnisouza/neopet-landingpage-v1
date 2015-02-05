@@ -301,7 +301,11 @@ h2{
 }
 .formArea .form-group{
     float: left;
-    margin: 15px 20px;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+.formArea .form-group.fright{
+    float: right;
 }
 .formArea .form-group .iconH{
     background: #fff;
@@ -327,8 +331,10 @@ h2{
     border: 1px solid #b7b7b7;
     border-left: 0 none;
     border-radius: 0 3px 3px 0!important;
-    height: 44px;
-    width: 298px;
+    height: 46px;
+    width: 297px;
+    margin: 0;
+    padding: 0;
     -webkit-outline: 0 none;
     -moz-outline: 0 none;
     -ms-outline: 0 none;
@@ -373,8 +379,6 @@ h2{
     }
     .formArea .form-group{
         width: 100%;
-        padding: 15px 20px;
-        box-sizing: border-box;
         margin: 0;
         float: none;
         position: relative;
