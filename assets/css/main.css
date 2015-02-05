@@ -1,9 +1,53 @@
+@font-face {
+    font-family: 'pn';
+    src: url('../font/pn-semibold-it.eot');
+    src: url('../font/pn-semibold-it.eot?#iefix') format('embedded-opentype'),
+         url('../font/pn-semibold-it.woff2') format('woff2'),
+         url('../font/pn-semibold-it.woff') format('woff'),
+         url('../font/pn-semibold-it.ttf') format('truetype'),
+         url('../font/pn-semibold-it.svg#proxima_nova_altSBdIt') format('svg');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'pn';
+    src: url('../font/pn-semibold.eot');
+    src: url('../font/pn-semibold.eot?#iefix') format('embedded-opentype'),
+         url('../font/pn-semibold.woff2') format('woff2'),
+         url('../font/pn-semibold.woff') format('woff'),
+         url('../font/pn-semibold.ttf') format('truetype'),
+         url('../font/pn-semibold.svg#proxima_nova_altSBdIt') format('svg');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pn';
+    src: url('../font/pn-regular.eot');
+    src: url('../font/pn-regular.eot?#iefix') format('embedded-opentype'),
+         url('../font/pn-regular.woff2') format('woff2'),
+         url('../font/pn-regular.woff') format('woff'),
+         url('../font/pn-regular.ttf') format('truetype'),
+         url('../font/pn-regular.svg#proxima_nova_altSBdIt') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'pn';
+    src: url('../font/pn-bold.eot');
+    src: url('../font/pn-bold.eot?#iefix') format('embedded-opentype'),
+         url('../font/pn-bold.woff2') format('woff2'),
+         url('../font/pn-bold.woff') format('woff'),
+         url('../font/pn-bold.ttf') format('truetype'),
+         url('../font/pn-bold.svg#proxima_nova_altSBdIt') format('svg');
+    font-weight: 700;
+    font-style: normal;
+}
 html,
 button,
 input,
 select,
 textarea {
-    color: #343434;
+    color: #212121;
 }
 
 html {
@@ -66,7 +110,96 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
+html,
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: #212121;
+}
+body{
+    background: url('../img/bg.jpg');
+}
+.container{
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 10px;
+    margin: 0 auto;
+    position: relative;
+    box-sizing: border-box;
+}
+.header{
+    min-height: 98px;
+}
+.header h1#logo{
+    background: url('../img/logo.png') no-repeat;
+    width: 101px;
+    height: 38px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 13px;
+    left: 17px;
+    font-size: 1px;
+    color: transparent;
+}
+.header h2{
+    font-family: 'pn';
+    text-align: center;
+    font-size: 51.8px;
+    font-weight: 700;
+    margin: 0;
+    line-height: 53px;
+    padding-top: 53px;
+    padding-bottom: 10px;
+}
+.videoTape{
+    width: 100%;
+    height: auto;
+    background: #00bcef;
+}
+.videoTape .container{
+    padding: 0;
+}
+.videoTape .container img{
+    width: 100%;
+    height: auto;
+}
+.videoTape .container #play{
+    width: 130px;
+    height: 91px;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    
+    background: url('../img/play.png') no-repeat;
+    cursor: pointer;
+    
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    
+    -webkit-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+    
+    z-index: 10;
+}
+.videoTape .container #play:hover{
+    opacity: 0.8;
+}
+.videoTape .container #videoHolder{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
 
 
 

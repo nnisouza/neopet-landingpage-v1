@@ -14,9 +14,15 @@ function actions() {
     cheet('s h a k e s p e a r e', function () {
       alert('Doubt thou the stars are fire; \nDoubt that the sun doth move; \nDoubt truth to be a liar; \nBut never doubt I love. \n                                                        - William Shakespeare');
     });
+    
+    $('#play').click(function() {
+        $(this).fadeOut('medium', function() {
+            $('#videoHolder').html('<iframe id="neovideo" width="100%" height="100%" src="https://www.youtube.com/embed/LUrNgkHWiWE?autoplay=1&showinfo=0&controls=0&rel=0&playerapiid=neovideo" frameborder="0" allowfullscreen></iframe>');
+            $('#videoHolder').fadeIn('slow');
+        });
+    });
 }
 function afterLoaded() {
-    alert('Go!');
 }
 
 
